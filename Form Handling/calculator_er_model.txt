@@ -1,0 +1,25 @@
+# Calculator App Database ER Model
+
+The current calculator app does not use a database, but if you wanted to store calculation history, a simple ER model could look like this:
+
+```
++-------------------+
+|   Calculation     |
++-------------------+
+| id (PK)           |
+| num1              |
+| num2              |
+| operator          |
+| result            |
+| created_at        |
++-------------------+
+```
+
+- **Calculation**: Stores each calculation performed by the user.
+- **id**: Primary key (unique identifier)
+- **num1, num2**: Input numbers
+- **operator**: Operation performed
+- **result**: Result of the calculation
+- **created_at**: Timestamp of when the calculation was made
+
+This is a single-entity ER model suitable for a simple calculator history feature.

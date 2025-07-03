@@ -1,0 +1,18 @@
+# Calculator App Wireframe
+
+Below is a simple wireframe for the calculator app layout:
+
+```
++-----------------------------+
+|        Calculator           |
++-----------------------------+
+|  [   num1 input field   ]   |
+|  [operator dropdown]        |
+|  [   num2 input field   ]   |
+|  [   Calculate button   ]   |
++-----------------------------+
+|        Result: ...          |
++-----------------------------+
+```
+
+- The wireframe shows the main UI elements: two number inputs, an operator selector, a calculate button, and a result display.

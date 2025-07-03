@@ -1,0 +1,15 @@
+# Calculator App Algorithm
+
+1. Start
+2. Display calculator form with two number inputs, operator dropdown, and calculate button
+3. If form is submitted (POST request):
+    a. Retrieve num1, num2, and operator from POST data
+    b. If operator is '+', set result = num1 + num2
+    c. Else if operator is '-', set result = num1 - num2
+    d. Else if operator is '*', set result = num1 * num2
+    e. Else if operator is '/', check if num2 != 0:
+        i. If true, set result = num1 / num2
+        ii. If false, set result = 'Error: Division by zero'
+    f. Else, set result = 'Invalid operator'
+4. Display the result
+5. End

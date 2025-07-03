@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App Dry Run</title>
+    <style>
+        body { background: #f0f4f8; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; margin: 0; }
+        .dryrun { background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); padding: 2rem; margin: 2rem 0; min-width: 340px; }
+        pre { font-size: 1.1rem; }
+        h1 { color: #0078d7; }
+    </style>
+</head>
+<body>
+    <h1>Calculator App Dry Run</h1>
+    <div class="dryrun">
+        <pre>
+Example 1
+Input: num1 = 8, num2 = 2, operator = '*'
+- Form submitted (POST)
+- num1 = 8
+- num2 = 2
+- operator = '*'
+- Switch operator:
+    '*' matches, so result = 8 * 2 = 16
+- Display: Result: 16
+
+Example 2
+Input: num1 = 10, num2 = 0, operator = '/'
+- Form submitted (POST)
+- num1 = 10
+- num2 = 0
+- operator = '/'
+- Switch operator:
+    '/' matches, check num2 != 0
+    num2 == 0, so result = 'Error: Division by zero'
+- Display: Result: Error: Division by zero
+
+Example 3
+Input: num1 = 5, num2 = 3, operator = '-'
+- Form submitted (POST)
+- num1 = 5
+- num2 = 3
+- operator = '-'
+- Switch operator:
+    '-' matches, so result = 5 - 3 = 2
+- Display: Result: 2
+        </pre>
+    </div>
+</body>
+</html>

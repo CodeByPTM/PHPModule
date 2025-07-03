@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App Flowchart</title>
+    <!-- Mermaid.js CDN for rendering flowcharts -->
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body {
+            background: #f0f4f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-top: 2rem;
+            color: #0078d7;
+        }
+        .mermaid {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 2rem;
+            margin: 2rem 0;
+            width: 100%;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator App Flowchart</h1>
+    <!-- Mermaid flowchart container -->
+    <div class="mermaid">
+flowchart TD
+    A([Start])
+    B{Form Submitted?}
+    C[Display Calculator Form]
+    D[Get num1, num2, operator from POST]
+    E{Operator}
+    F[Addition: result = num1 + num2]
+    G[Subtraction: result = num1 - num2]
+    H[Multiplication: result = num1 * num2]
+    I{num2 != 0?}
+    J[Division: result = num1 / num2]
+    K[Error: Division by zero]
+    L[Invalid operator]
+    M[Display Result]
+    N([End])
+
+    A --> B
+    B -- No --> C --> N
+    B -- Yes --> D --> E
+    E -- "+" --> F --> M
+    E -- "-" --> G --> M
+    E -- "*" --> H --> M
+    E -- "/" --> I
+    I -- Yes --> J --> M
+    I -- No --> K --> M
+    E -- else --> L --> M
+    M --> N
+    </div>
+</body>
+</html>

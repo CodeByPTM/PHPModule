@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App ER Model</title>
+    <style>
+        body { background: #f0f4f8; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; margin: 0; }
+        .er { background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); padding: 2rem; margin: 2rem 0; min-width: 340px; }
+        pre { font-size: 1.1rem; }
+        h1 { color: #0078d7; }
+    </style>
+</head>
+<body>
+    <h1>Calculator App Database ER Model</h1>
+    <div class="er">
+        <pre>
++-------------------+
+|   Calculation     |
++-------------------+
+| id (PK)           |
+| num1              |
+| num2              |
+| operator          |
+| result            |
+| created_at        |
++-------------------+
+        </pre>
+        <p><b>Calculation</b>: Stores each calculation performed by the user.<br>
+        <b>id</b>: Primary key (unique identifier)<br>
+        <b>num1, num2</b>: Input numbers<br>
+        <b>operator</b>: Operation performed<br>
+        <b>result</b>: Result of the calculation<br>
+        <b>created_at</b>: Timestamp of when the calculation was made</p>
+    </div>
+</body>
+</html>

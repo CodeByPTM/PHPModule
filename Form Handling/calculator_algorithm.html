@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App Algorithm</title>
+    <style>
+        body { background: #f0f4f8; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; margin: 0; }
+        .algo { background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); padding: 2rem; margin: 2rem 0; min-width: 340px; }
+        ol { font-size: 1.1rem; }
+        h1 { color: #0078d7; }
+    </style>
+</head>
+<body>
+    <h1>Calculator App Algorithm</h1>
+    <div class="algo">
+        <ol>
+            <li>Start</li>
+            <li>Display calculator form with two number inputs, operator dropdown, and calculate button</li>
+            <li>If form is submitted (POST request):
+                <ol type="a">
+                    <li>Retrieve num1, num2, and operator from POST data</li>
+                    <li>If operator is '+', set result = num1 + num2</li>
+                    <li>Else if operator is '-', set result = num1 - num2</li>
+                    <li>Else if operator is '*', set result = num1 * num2</li>
+                    <li>Else if operator is '/', check if num2 != 0:
+                        <ol type="i">
+                            <li>If true, set result = num1 / num2</li>
+                            <li>If false, set result = 'Error: Division by zero'</li>
+                        </ol>
+                    </li>
+                    <li>Else, set result = 'Invalid operator'</li>
+                </ol>
+            </li>
+            <li>Display the result</li>
+            <li>End</li>
+        </ol>
+    </div>
+</body>
+</html>
